@@ -22,7 +22,7 @@ class App extends Component{
 	render(){
 		return (
     		<div>
-    			<Header/>
+    			<Header newsSearch={keywords=>this.filterNews(keywords)}/>
     			<NewsList news={this.state.news}/>
     		</div>
     	)
