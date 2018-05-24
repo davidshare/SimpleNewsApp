@@ -12,7 +12,7 @@ class Header extends Component{
 				<header>
 					<div className="logo"
 					onClick={()=>console.log('clicked')}>Logo</div>
-					<input/>
+					<input onChange{this.inputChange}/>
 				</header>
 			)
 	}
