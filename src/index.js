@@ -20,7 +20,7 @@ class App extends Component{
 		let filtered = this.state.news.filter((item)=>{
 			return item.title.toLowerCase().indexOf(keywords.toLowerCase()) > -1;
 		})
-		this.setState({filtered:filtered});
+		this.setState({filtered});
 	}
 
 	render(){
