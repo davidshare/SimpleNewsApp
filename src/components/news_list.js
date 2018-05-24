@@ -3,7 +3,7 @@ import React from 'react';
 const NewsList = (props)=>{
 	const items = props.news.map((item)=>{
 		return (
-			<div>
+			<div key={item.id}>
 				<h3>{item.title}</h3>
 				<div>{item.feed}</div>
 			</div>
