@@ -1,7 +1,6 @@
 import React from 'react';
 
-const NewsItem = (props)=>{
-	const item = props.item;
+const NewsItem = ({item})=>{
 	return (
 		<div key={item.id}>
 				<h3>{item.title}</h3>
