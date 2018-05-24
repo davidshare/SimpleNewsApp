@@ -16,9 +16,11 @@ header{
 }
 
 header input{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin: 20px 0px;
 	padding:10px;
+	width:40%;
+	text-align: center;
 }
 
 .news_item{

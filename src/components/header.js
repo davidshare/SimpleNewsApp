@@ -20,7 +20,7 @@ class Header extends Component{
 		return(
 				<header>
 					<div className="logo">Logo</div>
-					<input onChange={this.inputChange.bind(this)}/>
+					<input placeholder="Enter your search string" onChange={this.inputChange.bind(this)}/>
 				</header>
 			)
 	}
