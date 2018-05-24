@@ -17,14 +17,17 @@ class App extends Component{
 	}
 
 	filterNews(keywords){
-		console.log(keywords);
+		let filtered = this.state.news.filter((item)=>{
+			return item.title.toLowerCase().indexOf(keywords.toLowerCase()) > -1;
+		})
+		this.setState({filtered:filtered});
 	}
 
 	render(){
 		return (
     		<div>
     			<Header newsSearch={keywords=>this.filterNews(keywords)}/>
-    			<NewsList news={this.state.news}/>
+    			<NewsList news={this.state.filtered}/>
     		</div>
     	)
 	}
