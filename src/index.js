@@ -19,7 +19,7 @@ class App extends Component{
 		return (
     		<div>
     			<Header/>
-    			<NewsList/>
+    			<NewsList news={this.state.news}/>
     		</div>
     	)
 	}
