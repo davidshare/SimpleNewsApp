@@ -18,8 +18,7 @@ class Header extends Component{
 	render(){
 		return(
 				<header>
-					<div className="logo"
-					onClick={()=>console.log('clicked')}>Logo</div>
+					<div className="logo">Logo</div>
 					<input onChange={this.inputChange.bind(this)}/>
 				</header>
 			)
