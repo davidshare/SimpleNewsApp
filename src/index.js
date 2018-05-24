@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 //import Components
 import Header from './components/header';
 import JSON from './db.json';
+import NewsList from './components/news_list'
 
 class App extends Component{
 	constructor(props){
@@ -18,6 +19,7 @@ class App extends Component{
 		return (
     		<div>
     			<Header/>
+    			<NewsList/>
     		</div>
     	)
 	}
