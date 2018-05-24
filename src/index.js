@@ -15,6 +15,10 @@ class App extends Component{
 		}
 	}
 
+	filterNews(keywords){
+		console.log(keywords);
+	}
+
 	render(){
 		return (
     		<div>
